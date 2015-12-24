@@ -10,6 +10,6 @@
 
 
 @protocol CNTCountView <NSObject>
-- (void)setCountText:(NSString*)countText;
-- (void)setDecrementEnabled:(BOOL)enabled;
+- (void)setCountText:(NSString *)countText; // view 显示
+- (void)setDecrementEnabled:(BOOL)enabled; // btn 事件
 @end

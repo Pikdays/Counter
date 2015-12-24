@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
+/// 权 ViewController = View Protocol  +  Presenter
+
 #import <UIKit/UIKit.h>
 #import "CNTCountView.h"
 
@@ -13,9 +15,9 @@
 
 
 @interface CNTCountViewController : UIViewController <CNTCountView>
-@property (nonatomic, weak) IBOutlet    UILabel*    countLabel;
-@property (nonatomic, weak) IBOutlet    UIButton*   decrementButton;
-@property (nonatomic, weak) IBOutlet    UIButton*   incrementButton;
+@property(nonatomic, weak) IBOutlet    UILabel *countLabel;
+@property(nonatomic, weak) IBOutlet    UIButton *decrementButton;
+@property(nonatomic, weak) IBOutlet    UIButton *incrementButton;
 
-@property (nonatomic, strong)   CNTCountPresenter*  presenter;
+@property(nonatomic, strong) CNTCountPresenter *presenter; // 展示器
 @end

@@ -14,31 +14,28 @@
 
 @implementation CNTAppDelegate
 
-- (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+
     [self createScreen];
 
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
 
-- (void)createScreen
-{
-	CNTCountViewController* view = [[CNTCountViewController alloc] init];
-	CNTCountPresenter* presenter = [[CNTCountPresenter alloc] init];
-	CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
+- (void)createScreen {
+    CNTCountViewController *viewController = [[CNTCountViewController alloc] init];
+    CNTCountPresenter *presenter = [[CNTCountPresenter alloc] init];
+    CNTCountInteractor *interactor = [[CNTCountInteractor alloc] init];
 
-    view.presenter = presenter;
-    presenter.view = view;
-    
-    presenter.interactor = interactor;
-    interactor.output = presenter;
-	
-	self.window.rootViewController = view;
+    viewController.presenter = presenter; // VC + 展示器
+    presenter.view = viewController; // 权 设置代理
+
+    presenter.interactor = interactor; // 权 设置代理
+    interactor.output = presenter; // 权 设置代理
+
+    self.window.rootViewController = viewController;
 }
 
 @end

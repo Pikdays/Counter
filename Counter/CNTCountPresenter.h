@@ -6,16 +6,22 @@
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
+
+/// 权 Presenter = View Protocol + Interactor Protocol
+
+
 #import <Foundation/Foundation.h>
 #import "CNTCountView.h"
 #import "CNTCountInteractorIO.h"
 
 
-@interface CNTCountPresenter : NSObject <CNTCountInteractorOutput>
-@property (nonatomic, weak)     id<CNTCountView>            view;
-@property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
+@interface CNTCountPresenter : NSObject <CNTCountInteractorOutput> // !!!
+@property(nonatomic, weak) id <CNTCountView> view;
+@property(nonatomic, strong) id <CNTCountInteractorInput> interactor; // !!!
 
 - (void)updateView;
+
 - (void)increment;
+
 - (void)decrement;
 @end

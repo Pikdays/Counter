@@ -10,12 +10,12 @@
 
 
 @protocol CNTCountInteractorInput <NSObject>
-- (void)requestCount;
-- (void)increment;
-- (void)decrement;
+- (void)requestCount; // =
+- (void)increment; // +
+- (void)decrement; // -
 @end
 
 
 @protocol CNTCountInteractorOutput <NSObject>
-- (void)updateCount:(NSUInteger)count;
+- (void)updateCount:(NSUInteger)count; // out =
 @end

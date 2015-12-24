@@ -8,46 +8,35 @@
 
 #import "CNTCountInteractor.h"
 
-
-@interface CNTCountInteractor()
-@property (nonatomic, assign)   NSUInteger  count;
+@interface CNTCountInteractor ()
+@property(nonatomic, assign) NSUInteger count;
 @end
-
 
 @implementation CNTCountInteractor
 
-- (void)requestCount
-{
+#pragma mark - CNTCountInteractorInput
+
+- (void)requestCount {
     [self sendCount];
 }
 
-
-- (void)increment
-{
+- (void)increment {
     ++self.count;
     [self sendCount];
 }
 
-
-- (void)decrement
-{
-	if ([self canDecrement])
-	{
+- (void)decrement {
+    if ([self canDecrement]) {
         --self.count;
         [self sendCount];
     }
 }
-
-
-- (BOOL)canDecrement
-{
-	return (self.count > 0);
+- (BOOL)canDecrement {
+    return (self.count > 0);
 }
 
-
-- (void)sendCount
-{
-    [self.output updateCount:self.count];
+- (void)sendCount {
+    [self.output updateCount:self.count]; // CNTCountInteractorOutput
 }
 
 @end
