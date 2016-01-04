@@ -6,7 +6,7 @@
 //
 
 // Class under test
-#import "CNTCountPresenter.h"
+#import "CNTViewModel.h"
 
 // Collaborators
 #import "CNTCountView.h"
@@ -20,7 +20,7 @@
 
 
 @interface CNTCountPresenterTests : XCTestCase
-@property (nonatomic, strong)   CNTCountPresenter*          presenter;
+@property (nonatomic, strong)   CNTViewModel *          presenter;
 @property (nonatomic, strong)   id<CNTCountView>            view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @end
@@ -32,7 +32,7 @@
 {
     [super setUp];
     
-    self.presenter = [[CNTCountPresenter alloc] init];
+    self.presenter = [[CNTViewModel alloc] init];
     
     self.view = mockProtocol(@protocol(CNTCountView));
     self.presenter.view = self.view;

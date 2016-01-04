@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "CNTCountView.h"
 
-@class CNTCountPresenter;
+@class CNTViewModel;
 
 
 @interface CNTCountViewController : UIViewController <CNTCountView>
@@ -19,5 +19,6 @@
 @property(nonatomic, weak) IBOutlet    UIButton *decrementButton;
 @property(nonatomic, weak) IBOutlet    UIButton *incrementButton;
 
-@property(nonatomic, strong) CNTCountPresenter *presenter; // 展示器
+@property(nonatomic, strong) CNTViewModel *viewModel; // 展示器
+
 @end

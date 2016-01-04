@@ -1,5 +1,5 @@
 //
-//  CNTCountPresenter.h
+//  CNTViewModel.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -12,16 +12,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CNTCountView.h"
-#import "CNTCountInteractorIO.h"
 
+@interface CNTViewModel : NSObject
 
-@interface CNTCountPresenter : NSObject <CNTCountInteractorOutput> // !!!
 @property(nonatomic, weak) id <CNTCountView> view;
-@property(nonatomic, strong) id <CNTCountInteractorInput> interactor; // !!!
 
 - (void)updateView;
 
 - (void)increment;
 
 - (void)decrement;
+
 @end

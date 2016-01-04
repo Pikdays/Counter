@@ -7,16 +7,13 @@
 //
 
 #import "CNTAppDelegate.h"
-#import "CNTCountInteractor.h"
-#import "CNTCountPresenter.h"
+#import "CNTViewModel.h"
 #import "CNTCountViewController.h"
 
 
 @implementation CNTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
     [self createScreen];
 
     [self.window makeKeyAndVisible];
@@ -25,17 +22,15 @@
 
 
 - (void)createScreen {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     CNTCountViewController *viewController = [[CNTCountViewController alloc] init];
-    CNTCountPresenter *presenter = [[CNTCountPresenter alloc] init];
-    CNTCountInteractor *interactor = [[CNTCountInteractor alloc] init];
+    CNTViewModel *presenter = [[CNTViewModel alloc] init];
 
-    viewController.presenter = presenter; // VC + 展示器
-    presenter.view = viewController; // 权 设置代理
+    self.window.rootViewController = viewController; // 权 设置代理
+    viewController.viewModel = presenter; // 权 设置代理 VC + 展示器
+    presenter.view = viewController; // 权 设置代理 xxx
 
-    presenter.interactor = interactor; // 权 设置代理
-    interactor.output = presenter; // 权 设置代理
-
-    self.window.rootViewController = viewController;
 }
 
 @end

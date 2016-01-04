@@ -7,7 +7,7 @@
 //
 
 #import "CNTCountViewController.h"
-#import "CNTCountPresenter.h"
+#import "CNTViewModel.h"
 
 
 @implementation CNTCountViewController
@@ -21,11 +21,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    [self.presenter updateView];
+    [self.viewModel updateView];
 }
 
-#pragma mark - View
-// CNTCountView
+#pragma mark - Protocol CNTCountView
 
 - (void)setCountText:(NSString *)countText {
     self.countLabel.text = countText;
@@ -37,13 +36,12 @@
 
 #pragma mark - Actions
 
-- (IBAction)increment:(id)sender {
-    [self.presenter increment];
+- (IBAction)decrement:(id)sender {
+    [self.viewModel decrement];
 }
 
-
-- (IBAction)decrement:(id)sender {
-    [self.presenter decrement];
+- (IBAction)increment:(id)sender {
+    [self.viewModel increment];
 }
 
 @end
