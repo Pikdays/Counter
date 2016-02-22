@@ -25,10 +25,6 @@
 
 #pragma mark - CNTCountInteractorInputProtocol
 
-- (void)requestCount {
-    [self outputCount];
-}
-
 - (void)increment {
     ++self.count;
 
@@ -40,6 +36,10 @@
         --self.count;
         [self outputCount];
     }
+}
+
+- (void)requestCount {
+    [self outputCount];
 }
 
 #pragma mark - CNTCountInteractorOutputProtocol

@@ -8,17 +8,17 @@
 
 @protocol CNTCountInteractorInputProtocol <NSObject>
 
-- (void)requestCount;
-
 - (void)increment;
 
 - (void)decrement;
+
+- (void)requestCount;
 
 @end
 
 
 
-@protocol CNTCountInteractorOutputProtocol <NSObject>
+@protocol CNTCountInteractorOutputDelegate <NSObject>
 
 - (void)outputCount:(NSUInteger)count;
 

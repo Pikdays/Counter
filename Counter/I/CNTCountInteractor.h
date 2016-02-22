@@ -16,6 +16,6 @@
 
 @interface CNTCountInteractor : NSObject <CNTCountInteractorInputProtocol>
 
-@property(nonatomic, weak) id <CNTCountInteractorOutputProtocol> output;
+@property(nonatomic, weak) id <CNTCountInteractorOutputDelegate> output;
 
 @end

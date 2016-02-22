@@ -9,13 +9,15 @@
 @protocol CNTCountViewProtocol;
 
 
-@interface CNTCountPresenter : NSObject <CNTCountInteractorOutputProtocol>
+@interface CNTCountPresenter : NSObject <CNTCountInteractorOutputDelegate>
 
-@property(nonatomic, weak) id <CNTCountViewProtocol> view;
+@property(nonatomic, weak) UIViewController <CNTCountViewProtocol> *view;
 @property(nonatomic, strong) id <CNTCountInteractorInputProtocol> input;
 
-- (void)updateView;
 - (void)increment;
+
 - (void)decrement;
+
+- (void)updateView;
 
 @end
