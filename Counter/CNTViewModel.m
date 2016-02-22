@@ -17,23 +17,19 @@
 
 @implementation CNTViewModel
 
-- (void)updateView {
-    [self sendCount];
-}
-
 - (void)increment {
     ++self.count;
-    [self sendCount];
+    [self updateView];
 }
 
 - (void)decrement {
     if (self.count > 0) {
         --self.count;
-        [self sendCount];
+        [self updateView];
     }
 }
 
-- (void)sendCount {
+- (void)updateView {
     [self.view setCountText:[self.countFormatter stringFromNumber:@(self.count)]];
     [self.view setDecrementEnabled:self.count>0];
 }

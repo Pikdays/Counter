@@ -17,10 +17,10 @@
 
 @property(nonatomic, weak) id <CNTCountView> view;
 
-- (void)updateView;
-
 - (void)increment;
 
 - (void)decrement;
+
+- (void)updateView;
 
 @end

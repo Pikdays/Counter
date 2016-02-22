@@ -24,7 +24,7 @@
 - (void)createScreen {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    CNTCountViewController *viewController = [[CNTCountViewController alloc] init];
+    CNTCountViewController *viewController = [[CNTCountViewController alloc] initWithNibName:@"CNTCountViewController" bundle:nil];
     CNTViewModel *presenter = [[CNTViewModel alloc] init];
 
     self.window.rootViewController = viewController; // 权 设置代理

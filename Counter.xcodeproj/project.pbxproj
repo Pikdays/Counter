@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AFAD3D59D9347F6ABD5274B /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97252028FD0644648F55C910 /* libPods-Tests.a */; };
+		9BD44D45B2755C065B4FC25B /* libPods-Counter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD246DD10D317045C9F7D00 /* libPods-Counter.a */; };
 		CF0DB9AC17C7D9FF0062B5F6 /* CNTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CNTViewModel.m */; };
 		CF0DB9B217C837B40062B5F6 /* CNTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */; };
 		CF0DB9B417C839E90062B5F6 /* CNTCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97252028FD0644648F55C910 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BD246DD10D317045C9F7D00 /* libPods-Counter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Counter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0DB9A817C7D9B20062B5F6 /* CNTCountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNTCountPresenterTests.m; path = ../CounterTests/CNTCountPresenterTests.m; sourceTree = "<group>"; };
 		CF0DB9AA17C7D9FF0062B5F6 /* CNTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTViewModel.h; sourceTree = "<group>"; };
 		CF0DB9AB17C7D9FF0062B5F6 /* CNTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTViewModel.m; sourceTree = "<group>"; };
@@ -68,7 +68,8 @@
 		CFBFC3C017C6A41D00004DE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNTCountInteractorTests.m; path = ../CounterTests/CNTCountInteractorTests.m; sourceTree = "<group>"; };
-		F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.debug.xcconfig"; sourceTree = "<group>"; };
+		F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,6 @@
 				CF6FA881197AD41300B2B172 /* XCTest.framework in Frameworks */,
 				CF6FA883197AD41300B2B172 /* UIKit.framework in Frameworks */,
 				CF6FA882197AD41300B2B172 /* Foundation.framework in Frameworks */,
-				3AFAD3D59D9347F6ABD5274B /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +90,7 @@
 				CFBFC3AD17C6A41D00004DE1 /* UIKit.framework in Frameworks */,
 				CFBFC3AF17C6A41D00004DE1 /* Foundation.framework in Frameworks */,
 				CFBFC3B117C6A41D00004DE1 /* CoreGraphics.framework in Frameworks */,
+				9BD44D45B2755C065B4FC25B /* libPods-Counter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +153,7 @@
 				CF6FA884197AD41300B2B172 /* Counter Tests */,
 				CFBFC3AB17C6A41D00004DE1 /* Frameworks */,
 				CFBFC3AA17C6A41D00004DE1 /* Products */,
-				F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */,
+				F61306E17672DFF5BD4032F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,7 +173,7 @@
 				CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */,
 				CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */,
 				CFBFC3B017C6A41D00004DE1 /* CoreGraphics.framework */,
-				97252028FD0644648F55C910 /* libPods-Tests.a */,
+				0BD246DD10D317045C9F7D00 /* libPods-Counter.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +212,15 @@
 			path = CounterTests;
 			sourceTree = "<group>";
 		};
+		F61306E17672DFF5BD4032F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */,
+				F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,11 +228,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF6FA88F197AD41300B2B172 /* Build configuration list for PBXNativeTarget "Counter Tests" */;
 			buildPhases = (
-				1C0F0A685747453DAC173DF5 /* Check Pods Manifest.lock */,
 				CF6FA87C197AD41300B2B172 /* Sources */,
 				CF6FA87D197AD41300B2B172 /* Frameworks */,
 				CF6FA87E197AD41300B2B172 /* Resources */,
-				8CE4BA8B44354635AF7912D3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFBFC3E117C6A41D00004DE1 /* Build configuration list for PBXNativeTarget "Counter" */;
 			buildPhases = (
+				C2A9DCE885E6716E112E4943 /* Check Pods Manifest.lock */,
 				CFBFC3A517C6A41D00004DE1 /* Sources */,
 				CFBFC3A617C6A41D00004DE1 /* Frameworks */,
 				CFBFC3A717C6A41D00004DE1 /* Resources */,
+				D3634674C05D786AF622DAA6 /* Embed Pods Frameworks */,
+				C5F8187F5EA53E397C5CE310 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,7 +319,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C0F0A685747453DAC173DF5 /* Check Pods Manifest.lock */ = {
+		C2A9DCE885E6716E112E4943 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,7 +334,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8CE4BA8B44354635AF7912D3 /* Copy Pods Resources */ = {
+		C5F8187F5EA53E397C5CE310 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,7 +346,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Counter/Pods-Counter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3634674C05D786AF622DAA6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Counter/Pods-Counter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,7 +420,6 @@
 /* Begin XCBuildConfiguration section */
 		CF6FA890197AD41300B2B172 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Counter.app/Counter";
 				CLANG_ENABLE_MODULES = YES;
@@ -427,7 +452,6 @@
 		};
 		CF6FA891197AD41300B2B172 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Counter.app/Counter";
 				CLANG_ENABLE_MODULES = YES;
@@ -513,6 +537,7 @@
 		};
 		CFBFC3E217C6A41D00004DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
@@ -525,6 +550,7 @@
 		};
 		CFBFC3E317C6A41D00004DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
