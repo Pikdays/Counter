@@ -37,12 +37,12 @@
 
 #pragma mark - Actions
 
-- (IBAction)decrement:(id)sender {
-    [self.countPresenter decrement];
-}
-
 - (IBAction)increment:(id)sender {
     [self.countPresenter increment];
+}
+
+- (IBAction)decrement:(id)sender {
+    [self.countPresenter decrement];
 }
 
 @end

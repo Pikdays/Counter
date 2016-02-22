@@ -21,16 +21,16 @@
 
 #pragma mark - Action
 
-- (void)updateView {
-    [self.input requestCount];
-}
-
 - (void)increment {
     [self.input increment];
 }
 
 - (void)decrement {
     [self.input decrement];
+}
+
+- (void)updateView {
+    [self.input requestCount];
 }
 
 #pragma mark - CNTCountInteractorOutputProtocol
