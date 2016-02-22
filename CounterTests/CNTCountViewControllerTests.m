@@ -9,7 +9,7 @@
 #import "CNTCountViewController.h"
 
 // Collaborators
-#import "CNTViewModel.h"
+#import "CNTCountInteractor.h"
 
 // Test support
 #import <XCTest/XCTest.h>
@@ -27,7 +27,7 @@
 
 @interface CNTCountViewControllerTests : XCTestCase
 @property (nonatomic, strong)   CNTCountViewController* view;
-@property (nonatomic, strong)   CNTViewModel *      presenter;
+@property (nonatomic, strong)   CNTCountInteractor *      presenter;
 @end
 
 
@@ -38,9 +38,9 @@
     [super setUp];
     
     self.view = [[CNTCountViewController alloc] init];
-    [self.view view];   // force the view to load
+    [self.view view];   // force the output to load
     
-    self.presenter = mock([CNTViewModel class]);
+    self.presenter = mock([CNTCountInteractor class]);
     self.view.viewModel = self.presenter;
 }
 

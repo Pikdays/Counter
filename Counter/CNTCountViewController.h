@@ -9,17 +9,18 @@
 /// 权 ViewController = View Protocol  +  Presenter
 
 #import <UIKit/UIKit.h>
-#import "CNTCountView.h"
+#import "CNTCountViewProtocol.h"
 
-@class CNTViewModel;
+@class CNTCountInteractor;
+@class CNTCountPresenter;
 
 
-@interface CNTCountViewController : UIViewController <CNTCountView>
+@interface CNTCountViewController : UIViewController <CNTCountViewProtocol>
 
-@property(nonatomic, weak) IBOutlet    UILabel *countLabel;
-@property(nonatomic, weak) IBOutlet    UIButton *decrementButton;
-@property(nonatomic, weak) IBOutlet    UIButton *incrementButton;
+@property(nonatomic, weak) IBOutlet UILabel *countLabel;
+@property(nonatomic, weak) IBOutlet UIButton *decrementButton;
+@property(nonatomic, weak) IBOutlet UIButton *incrementButton;
 
-@property(nonatomic, strong) CNTViewModel *viewModel; // 展示器
+@property(nonatomic, strong) CNTCountPresenter *countPresenter;
 
 @end
