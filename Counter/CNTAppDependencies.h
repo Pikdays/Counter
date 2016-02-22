@@ -8,8 +8,6 @@
 
 @interface CNTAppDependencies : NSObject
 
-- (instancetype)initWithWindow:(UIWindow *)window;
-
-- (void)installRootViewController;
+- (void)installRootViewControllerIntoWindow:(UIWindow *)window;
 
 @end

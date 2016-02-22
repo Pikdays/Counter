@@ -10,6 +10,7 @@
 		5C3493C57CBC917EF4C84C5D /* CNTCountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3493D4FE514DC583B3B2E9 /* CNTCountInteractor.m */; };
 		5C3493D6011519C8C7BF6A87 /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349DCC5CF3925516A70026 /* RootWireframe.m */; };
 		5C3493FCD32F6846EE432E04 /* CNTCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C349141E1558164074247FE /* CNTCountViewController.xib */; };
+		5C3495BF52F67A324B9ACAA1 /* CNTCountWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349BF77DB66C428536D8BC /* CNTCountWireframe.m */; };
 		5C349777761D8BEC7C4D3DB7 /* CNTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3490304A9F8606C745CD47 /* CNTCountViewController.m */; };
 		5C3499B344893C50F8BD0801 /* CNTAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3492E240F31AC2F3D0766C /* CNTAppDependencies.m */; };
 		5C349AE52A903BC4D54A69D3 /* CNTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349EF1D8F5676FD75ECEAD /* CNTCountPresenter.m */; };
@@ -52,10 +53,12 @@
 		5C3492E240F31AC2F3D0766C /* CNTAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTAppDependencies.m; sourceTree = "<group>"; };
 		5C3493D4FE514DC583B3B2E9 /* CNTCountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountInteractor.m; sourceTree = "<group>"; };
 		5C3494C1EFE4B94D1DC21C7B /* RootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootWireframe.h; sourceTree = "<group>"; };
+		5C349501DFD41176D758B315 /* CNTCountWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountWireframe.h; sourceTree = "<group>"; };
 		5C3496CB8EBC2D7B0A7564FA /* CNTAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTAppDependencies.h; sourceTree = "<group>"; };
 		5C3497A7CF374AFE06A290F3 /* CNTCountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenter.h; sourceTree = "<group>"; };
 		5C34998CCC4CE713BBEB7A86 /* CNTCountInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractorIO.h; sourceTree = "<group>"; };
 		5C349AA32AA1A5C7759EF2BD /* CNTCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountViewController.h; sourceTree = "<group>"; };
+		5C349BF77DB66C428536D8BC /* CNTCountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountWireframe.m; sourceTree = "<group>"; };
 		5C349DCC5CF3925516A70026 /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
 		5C349DF19B60D290C73A682E /* CNTCountViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountViewProtocol.h; sourceTree = "<group>"; };
 		5C349E88B6CECEE22D562281 /* NSNumberFormatter+CNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+CNT.m"; sourceTree = "<group>"; };
@@ -197,6 +200,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5C349DBB9FDC57D20081EB20 /* R */ = {
+			isa = PBXGroup;
+			children = (
+				5C349BF77DB66C428536D8BC /* CNTCountWireframe.m */,
+				5C349501DFD41176D758B315 /* CNTCountWireframe.h */,
+			);
+			name = R;
+			sourceTree = "<group>";
+		};
 		5C349E1F3BA12F7EEEA2EE78 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 				5C3493737A83C0EDDECDD5B7 /* I */,
 				5C349BB72AA30140E994CE69 /* P */,
 				5C3490BA73F0568FA812951E /* V */,
+				5C349DBB9FDC57D20081EB20 /* R */,
 			);
 			name = Counter;
 			sourceTree = "<group>";
@@ -493,6 +506,7 @@
 				5C349AE52A903BC4D54A69D3 /* CNTCountPresenter.m in Sources */,
 				5C349777761D8BEC7C4D3DB7 /* CNTCountViewController.m in Sources */,
 				5C3499B344893C50F8BD0801 /* CNTAppDependencies.m in Sources */,
+				5C3495BF52F67A324B9ACAA1 /* CNTCountWireframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@
 
 @interface RootWireframe : NSObject
 
-- (id)initWithWindow:(UIWindow *)window;
+- (void)showRootViewController:(UIViewController *)viewController inWindow:(UIWindow *)window;
+
+//- (id)initWithWindow:(UIWindow *)window;
 
 @end

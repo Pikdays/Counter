@@ -17,31 +17,36 @@
 
 @implementation RootWireframe
 
-- (instancetype)initWithWindow:(UIWindow *)window {
-    if ((self = [super init])) {
-        [self configureDependencies:window];
-    }
-
-    return self;
+- (void)showRootViewController:(UIViewController *)viewController inWindow:(UIWindow *)window {
+    UINavigationController *navigationController = (UINavigationController *) [window rootViewController];
+    navigationController.viewControllers = @[viewController];
 }
 
-- (void)configureDependencies:(UIWindow *)window {
-    CNTCountViewController *countViewController = [[CNTCountViewController alloc] initWithNibName:@"CNTCountViewController" bundle:nil];
-    CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
-    CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
+//- (instancetype)initWithWindow:(UIWindow *)window {
+//    if ((self = [super init])) {
+//        [self configureDependencies:window];
+//    }
+//
+//    return self;
+//}
 
-    /********** Root **********/
-    window.rootViewController = countViewController; // 权 设置代理
-
-    /********** V **********/
-    countViewController.countPresenter = countPresenter; // 权 设置代理 VC + 展示器
-
-    /********** P **********/
-    countPresenter.view = countViewController;
-    countPresenter.input = countInteractor;
-
-    /********** I **********/
-    countInteractor.output = countPresenter; // 权 设置代理 xxx
-}
+//- (void)configureDependencies:(UIWindow *)window {
+//    CNTCountViewController *countViewController = [[CNTCountViewController alloc] initWithNibName:@"CNTCountViewController" bundle:nil];
+//    CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
+//    CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
+//
+//    /********** Root **********/
+//    window.rootViewController = countViewController;
+//
+//    /********** V **********/
+//    countViewController.countPresenter = countPresenter;
+//
+//    /********** P **********/
+//    countPresenter.view = countViewController;
+//    countPresenter.input = countInteractor;
+//
+//    /********** I **********/
+//    countInteractor.output = countPresenter;
+//}
 
 @end

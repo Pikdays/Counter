@@ -23,4 +23,6 @@
 
 @property(nonatomic, strong) CNTCountPresenter *countPresenter;
 
++ (instancetype)instantiateViewControllerFromNib;
+
 @end

@@ -13,6 +13,10 @@
 
 @implementation CNTCountViewController
 
++ (instancetype)instantiateViewControllerFromNib {
+    return [[CNTCountViewController alloc] initWithNibName:@"CNTCountViewController" bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

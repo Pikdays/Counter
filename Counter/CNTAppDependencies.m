@@ -5,33 +5,50 @@
 
 #import "CNTAppDependencies.h"
 #import "RootWireframe.h"
+#import "CNTCountWireframe.h"
+#import "CNTCountPresenter.h"
+#import "CNTCountInteractor.h"
 
+@interface CNTAppDependencies ()
+
+@property(nonatomic, strong) CNTCountWireframe *countWireframe;
+
+@end
 
 @implementation CNTAppDependencies
 
-- (id)initWithWindow:(UIWindow *)window {
+- (instancetype)init {
     if ((self = [super init])) {
-        [self configureDependencies:window];
+        [self configureDependencies];
     }
 
     return self;
 }
 
-- (void)configureDependencies:(UIWindow *)window {
-    // -----
-    // root classes
-    RootWireframe *rootWireframe = [[RootWireframe alloc] initWithWindow:window];
+- (void)configureDependencies {
+    // Root Level Classes
+    RootWireframe *rootWireframe = [[RootWireframe alloc] init];
 
-    // *** add datastore
 
-    // *** module initialization
+    // Count Modules Classes
+    CNTCountWireframe *countWireframe = [[CNTCountWireframe alloc] init];
+    CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
+    CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
 
+    /********** I **********/
+    countInteractor.output = countPresenter;
+
+    /********** P **********/
+    countPresenter.input = countInteractor;
+
+    /********** R **********/
+    countWireframe.rootWireframe = rootWireframe;
+    countWireframe.countPresenter = countPresenter;
+    self.countWireframe = countWireframe;
 }
 
-- (void)installRootViewController {
-    // *** present first wireframe here
-
+- (void)installRootViewControllerIntoWindow:(UIWindow *)window {
+    [self.countWireframe presentCountInterfaceFromWindow:window];
 }
-
 
 @end

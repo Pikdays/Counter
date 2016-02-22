@@ -17,8 +17,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    CNTAppDependencies *dependencies = [[CNTAppDependencies alloc] initWithWindow:_window];
-    [dependencies installRootViewController];
+    CNTAppDependencies *dependencies = [[CNTAppDependencies alloc] init];
+    [dependencies installRootViewControllerIntoWindow:self.window];
 
     [self.window makeKeyAndVisible];
     return YES;
