@@ -1,5 +1,5 @@
 //
-//  CNTCountViewController.h
+//  BYTCountViewController.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -9,14 +9,14 @@
 /// 权 ViewController = View Protocol  +  Presenter
 
 #import <UIKit/UIKit.h>
-#import "CNTCountViewProtocol.h"
+#import "BYTCountViewProtocol.h"
 
-@protocol CNTCountPresenterProtocol;
+@protocol BYTCountPresenterProtocol;
 
 
-@interface CNTCountViewController : UIViewController <CNTCountViewProtocol>
+@interface BYTCountViewController : UIViewController <BYTCountViewProtocol>
 
-@property(nonatomic, strong) id <CNTCountPresenterProtocol> presenter;
+@property(nonatomic, strong) id <BYTCountPresenterProtocol> presenter;
 
 + (instancetype)instantiateViewControllerFromNib;
 

@@ -1,5 +1,5 @@
 //
-//  CNTAppDelegate.h
+//  BYTAppDelegate.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/22/13.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CNTAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BYTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property(strong, nonatomic) UIWindow *window;
 

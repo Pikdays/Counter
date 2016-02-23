@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CNTCountPresenterProtocol <NSObject>
+@protocol BYTCountPresenterProtocol <NSObject>
 
 - (void)increment;
 

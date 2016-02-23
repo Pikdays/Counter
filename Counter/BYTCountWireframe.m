@@ -3,24 +3,24 @@
 // Copyright (c) 2016 Mutual Mobile. All rights reserved.
 //
 
-#import "CNTCountWireframe.h"
+#import "BYTCountWireframe.h"
 
 #import "RootWireframe.h"
 
-#import "CNTCountViewController.h"
-#import "CNTCountPresenter.h"
+#import "BYTCountViewController.h"
+#import "BYTCountPresenter.h"
 
-@interface CNTCountWireframe ()
+@interface BYTCountWireframe ()
 
-@property(nonatomic, strong) CNTCountViewController *countViewController;
+@property(nonatomic, strong) BYTCountViewController *countViewController;
 
 @end
 
-@implementation CNTCountWireframe
+@implementation BYTCountWireframe
 
 - (void)presentCountInterfaceFromWindow:(UIWindow *)window {
     /********** V & P **********/
-    self.countViewController = [CNTCountViewController instantiateViewControllerFromNib];
+    self.countViewController = [BYTCountViewController instantiateViewControllerFromNib];
     self.countViewController.presenter = self.countPresenter;
     self.countPresenter.view = self.countViewController;
 

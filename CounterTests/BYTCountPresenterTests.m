@@ -6,10 +6,10 @@
 ////
 //
 //// Class under test
-//#import "CNTCountInteractor.h"
+//#import "BYTCountInteractor.h"
 //
 //// Collaborators
-//#import "CNTCountViewProtocol.h"
+//#import "BYTCountViewProtocol.h"
 //#import "CNTCountInteractorIO.h"
 //
 //// Test support
@@ -19,22 +19,22 @@
 //#import "OCMockito.h"
 //
 //
-//@interface CNTCountPresenterTests : XCTestCase
-//@property (nonatomic, strong)   CNTCountInteractor *          presenter;
-//@property (nonatomic, strong)   id<CNTCountViewProtocol>            view;
+//@interface BYTCountPresenterTests : XCTestCase
+//@property (nonatomic, strong)   BYTCountInteractor *          presenter;
+//@property (nonatomic, strong)   id<BYTCountViewProtocol>            view;
 //@property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 //@end
 //
 //
-//@implementation CNTCountPresenterTests
+//@implementation BYTCountPresenterTests
 //
 //- (void)setUp
 //{
 //    [super setUp];
 //
-//    self.presenter = [[CNTCountInteractor alloc] init];
+//    self.presenter = [[BYTCountInteractor alloc] init];
 //
-//    self.view = mockProtocol(@protocol(CNTCountViewProtocol));
+//    self.view = mockProtocol(@protocol(BYTCountViewProtocol));
 //    self.presenter.output = self.view;
 //
 //    self.interactor = mockProtocol(@protocol(CNTCountInteractorInput));

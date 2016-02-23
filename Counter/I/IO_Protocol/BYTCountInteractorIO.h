@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol CNTCountInteractorInputProtocol <NSObject>
+@protocol BYTCountInteractorInputProtocol <NSObject>
 
 - (void)increment;
 
@@ -18,7 +18,7 @@
 
 
 
-@protocol CNTCountInteractorOutputDelegate <NSObject>
+@protocol BYTCountInteractorOutputDelegate <NSObject>
 
 - (void)outputCount:(NSUInteger)count;
 

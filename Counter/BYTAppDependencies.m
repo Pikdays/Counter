@@ -3,22 +3,22 @@
 // Copyright (c) 2016 Mutual Mobile. All rights reserved.
 //
 
-#import "CNTAppDependencies.h"
+#import "BYTAppDependencies.h"
 
 #import "RootWireframe.h"
-#import "CNTCountWireframe.h"
+#import "BYTCountWireframe.h"
 
-#import "CNTCountPresenter.h"
-#import "CNTCountInteractor.h"
+#import "BYTCountPresenter.h"
+#import "BYTCountInteractor.h"
 
-@interface CNTAppDependencies ()
+@interface BYTAppDependencies ()
 
 @property(nonatomic, strong) RootWireframe *rootWireframe;
-@property(nonatomic, strong) CNTCountWireframe *countWireframe;
+@property(nonatomic, strong) BYTCountWireframe *countWireframe;
 
 @end
 
-@implementation CNTAppDependencies
+@implementation BYTAppDependencies
 
 - (instancetype)init {
     if ((self = [super init])) {
@@ -33,9 +33,9 @@
     self.rootWireframe = [[RootWireframe alloc] init];
 
     // Count Modules Classes
-    CNTCountWireframe *countWireframe = [[CNTCountWireframe alloc] init];
-    CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
-    CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
+    BYTCountWireframe *countWireframe = [[BYTCountWireframe alloc] init];
+    BYTCountPresenter *countPresenter = [[BYTCountPresenter alloc] init];
+    BYTCountInteractor *countInteractor = [[BYTCountInteractor alloc] init];
 
     /********** I & P **********/
     countInteractor.output = countPresenter;

@@ -3,15 +3,15 @@
 // Copyright (c) 2016 Mutual Mobile. All rights reserved.
 //
 
-#import "CNTCountPresenter.h"
-#import "CNTCountViewProtocol.h"
+#import "BYTCountPresenter.h"
+#import "BYTCountViewProtocol.h"
 #import "PJCategoriesHeader.h"
 
-@interface CNTCountPresenter ()
+@interface BYTCountPresenter ()
 
 @end
 
-@implementation CNTCountPresenter
+@implementation BYTCountPresenter
 
 #pragma mark - ⊂((・猿・))⊃ Set_Get
 

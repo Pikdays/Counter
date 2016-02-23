@@ -1,5 +1,5 @@
 //
-//  CNTCountInteractor.h
+//  BYTCountInteractor.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -11,10 +11,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import "CNTCountInteractorIO.h"
+#import "BYTCountInteractorIO.h"
 
-@interface CNTCountInteractor : NSObject <CNTCountInteractorInputProtocol>
+@interface BYTCountInteractor : NSObject <BYTCountInteractorInputProtocol>
 
-@property(nonatomic, weak) id <CNTCountInteractorOutputDelegate> output;
+@property(nonatomic, weak) id <BYTCountInteractorOutputDelegate> output;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  CNTCountViewProtocol.h
+//  BYTCountViewProtocol.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol CNTCountViewProtocol <NSObject>
+@protocol BYTCountViewProtocol <NSObject>
 
 - (void)setCountText:(NSString *)countText; // output 显示
 - (void)setDecrementEnabled:(BOOL)enabled; // btn 事件 仍可属于显示

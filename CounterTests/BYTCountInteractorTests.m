@@ -6,7 +6,7 @@
 ////
 //
 //// Class under test
-//#import "CNTCountInteractor.h"
+//#import "BYTCountInteractor.h"
 //
 //// Test support
 //#import <XCTest/XCTest.h>
@@ -18,19 +18,19 @@
 //#define assertCountEquals(expected) assertThatUnsignedInteger(self.count, equalToUnsignedInteger(expected))
 //
 //
-//@interface CNTCountInteractorTests : XCTestCase <CNTCountInteractorOutput>
+//@interface BYTCountInteractorTests : XCTestCase <CNTCountInteractorOutput>
 //@property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 //@property (nonatomic, assign)   NSUInteger                  count;
 //@end
 //
 //
-//@implementation CNTCountInteractorTests
+//@implementation BYTCountInteractorTests
 //
 //- (void)setUp
 //{
 //    [super setUp];
 //
-//    CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
+//    BYTCountInteractor* interactor = [[BYTCountInteractor alloc] init];
 //    interactor.output = self;
 //    self.interactor = interactor;
 //}

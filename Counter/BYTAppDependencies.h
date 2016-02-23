@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface CNTAppDependencies : NSObject
+@interface BYTAppDependencies : NSObject
 
 - (void)installRootViewControllerIntoWindow:(UIWindow *)window;
 

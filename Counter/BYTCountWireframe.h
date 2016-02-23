@@ -6,13 +6,13 @@
 #import <Foundation/Foundation.h>
 
 @class RootWireframe;
-@class CNTCountPresenter;
+@class BYTCountPresenter;
 
 
-@interface CNTCountWireframe : NSObject
+@interface BYTCountWireframe : NSObject
 
 @property(nonatomic, strong) RootWireframe *rootWireframe;
-@property (nonatomic, strong) CNTCountPresenter *countPresenter;
+@property (nonatomic, strong) BYTCountPresenter *countPresenter;
 
 - (void)presentCountInterfaceFromWindow:(UIWindow *)window;
 

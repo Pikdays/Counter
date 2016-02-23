@@ -1,26 +1,26 @@
 //
-//  CNTCountViewController.m
+//  BYTCountViewController.m
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CNTCountViewController.h"
-#import "CNTCountPresenterProtocol.h"
+#import "BYTCountViewController.h"
+#import "BYTCountPresenterProtocol.h"
 
-@interface CNTCountViewController ()
+@interface BYTCountViewController ()
 @property(nonatomic, weak) IBOutlet UILabel *countLabel;
 @property(nonatomic, weak) IBOutlet UIButton *incrementButton;
 @property(nonatomic, weak) IBOutlet UIButton *decrementButton;
 @end
 
-@implementation CNTCountViewController
+@implementation BYTCountViewController
 
 #pragma mark - ⊂((・猿・))⊃ LifeCycle
 
 + (instancetype)instantiateViewControllerFromNib {
-    return [[CNTCountViewController alloc] initWithNibName:@"CNTCountViewController" bundle:nil];
+    return [[BYTCountViewController alloc] initWithNibName:@"BYTCountViewController" bundle:nil];
 }
 
 - (void)viewDidLoad {

@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CNTCountInteractor.h"
+#import "BYTCountInteractor.h"
 
 
-@interface CNTCountInteractor ()
+@interface BYTCountInteractor ()
 
 @property(nonatomic, assign) NSUInteger count;
 
 @end
 
-@implementation CNTCountInteractor
+@implementation BYTCountInteractor
 
 #pragma mark - ⊂((・猿・))⊃ Set_Get
 

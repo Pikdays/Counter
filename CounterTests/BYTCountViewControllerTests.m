@@ -6,10 +6,10 @@
 ////
 //
 //// Class under test
-//#import "CNTCountViewController.h"
+//#import "BYTCountViewController.h"
 //
 //// Collaborators
-//#import "CNTCountInteractor.h"
+//#import "BYTCountInteractor.h"
 //
 //// Test support
 //#import <XCTest/XCTest.h>
@@ -25,22 +25,22 @@
 //#define assertDecrementButtonEnabledEquals(expected) assertThatBool(self.view.decrementButton.enabled, equalToBool(expected))
 //
 //
-//@interface CNTCountViewControllerTests : XCTestCase
-//@property (nonatomic, strong)   CNTCountViewController* view;
-//@property (nonatomic, strong)   CNTCountInteractor *      presenter;
+//@interface BYTCountViewControllerTests : XCTestCase
+//@property (nonatomic, strong)   BYTCountViewController* view;
+//@property (nonatomic, strong)   BYTCountInteractor *      presenter;
 //@end
 //
 //
-//@implementation CNTCountViewControllerTests
+//@implementation BYTCountViewControllerTests
 //
 //- (void)setUp
 //{
 //    [super setUp];
 //
-//    self.view = [[CNTCountViewController alloc] init];
+//    self.view = [[BYTCountViewController alloc] init];
 //    [self.view view];   // force the output to load
 //
-//    self.presenter = mock([CNTCountInteractor class]);
+//    self.presenter = mock([BYTCountInteractor class]);
 //    self.view.viewModel = self.presenter;
 //}
 //
