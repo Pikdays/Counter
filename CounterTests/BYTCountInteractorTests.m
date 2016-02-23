@@ -12,6 +12,7 @@
 #import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
+
 #import "OCHamcrest.h"
 
 
@@ -19,25 +20,23 @@
 
 
 @interface BYTCountInteractorTests : XCTestCase <BYTCountInteractorOutputDelegate>
-@property (nonatomic, strong)   id<BYTCountInteractorInputProtocol> interactor;
-@property (nonatomic, assign)   NSUInteger                  count;
+@property(nonatomic, strong) id <BYTCountInteractorInputProtocol> interactor;
+@property(nonatomic, assign) NSUInteger count;
 @end
 
 
 @implementation BYTCountInteractorTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
 
-    BYTCountInteractor* interactor = [[BYTCountInteractor alloc] init];
+    BYTCountInteractor *interactor = [[BYTCountInteractor alloc] init];
     interactor.output = self;
     self.interactor = interactor;
 }
 
 
-- (void)testInitialCountIsZero
-{
+- (void)testInitialCountIsZero {
     self.count = 1;
 
     [self.interactor requestCount];
@@ -46,16 +45,14 @@
 }
 
 
-- (void)testOneIncrementReturnsOne
-{
+- (void)testOneIncrementReturnsOne {
     [self.interactor increment];
 
     assertCountEquals(1);
 }
 
 
-- (void)testTwoIncrementsReturnsTwo
-{
+- (void)testTwoIncrementsReturnsTwo {
     [self.interactor increment];
     [self.interactor increment];
 
@@ -63,39 +60,35 @@
 }
 
 
-- (void)testDecrementFromZeroReturnsZero
-{
-	[self.interactor decrement];
+- (void)testDecrementFromZeroReturnsZero {
+    [self.interactor decrement];
 
-	assertCountEquals(0);
+    assertCountEquals(0);
 }
 
 
-- (void)testOneDecrementFromOneReturnsZero
-{
-	[self.interactor increment];
-
-	[self.interactor decrement];
-
-	assertCountEquals(0);
-}
-
-
-- (void)testOneDecrementFromTwoReturnsOne
-{
-	[self.interactor increment];
+- (void)testOneDecrementFromOneReturnsZero {
     [self.interactor increment];
 
-	[self.interactor decrement];
+    [self.interactor decrement];
 
-	assertCountEquals(1);
+    assertCountEquals(0);
+}
+
+
+- (void)testOneDecrementFromTwoReturnsOne {
+    [self.interactor increment];
+    [self.interactor increment];
+
+    [self.interactor decrement];
+
+    assertCountEquals(1);
 }
 
 
 #pragma mark - Interactor Output
 
-- (void)updateCount:(NSUInteger)count
-{
+- (void)updateCount:(NSUInteger)count {
     self.count = count;
 }
 

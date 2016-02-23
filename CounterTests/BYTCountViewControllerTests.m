@@ -15,9 +15,11 @@
 #import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
+
 #import "OCHamcrest.h"
 
 #define MOCKITO_SHORTHAND
+
 #import "OCMockito.h"
 
 
@@ -26,15 +28,14 @@
 
 
 @interface BYTCountViewControllerTests : XCTestCase
-@property (nonatomic, strong)   BYTCountViewController* view;
-@property (nonatomic, strong)   BYTCountInteractor *      presenter;
+@property(nonatomic, strong) BYTCountViewController *view;
+@property(nonatomic, strong) BYTCountInteractor *presenter;
 @end
 
 
 @implementation BYTCountViewControllerTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
 
     self.view = [[BYTCountViewController alloc] init];
@@ -45,39 +46,34 @@
 }
 
 
-- (void)testInitialState
-{
+- (void)testInitialState {
     assertThat(self.view.countLabel.text, nilValue());
     assertThatBool(self.view.decrementButton.enabled, equalToBool(YES));
 }
 
 
-- (void)testSetCountTextToZero
-{
-	[self.view setCountText:@"zero"];
+- (void)testSetCountTextToZero {
+    [self.view setCountText:@"zero"];
 
-	assertCountTextEquals(@"zero");
+    assertCountTextEquals(@"zero");
 }
 
 
-- (void)testSetCountTextToOne
-{
-	[self.view setCountText:@"one"];
+- (void)testSetCountTextToOne {
+    [self.view setCountText:@"one"];
 
-	assertCountTextEquals(@"one");
+    assertCountTextEquals(@"one");
 }
 
 
-- (void)testDisableDecrement
-{
+- (void)testDisableDecrement {
     [self.view setDecrementEnabled:NO];
 
     assertDecrementButtonEnabledEquals(NO);
 }
 
 
-- (void)testEnableDecrement
-{
+- (void)testEnableDecrement {
     [self setDecrementButtonEnabled:NO];
 
     [self.view setDecrementEnabled:YES];
@@ -86,24 +82,21 @@
 }
 
 
-- (void)testViewAppearingRequestsViewUpdate
-{
+- (void)testViewAppearingRequestsViewUpdate {
     [self.view viewWillAppear:YES];
 
     [verify(self.presenter) updateView];
 }
 
 
-- (void)testIncrementButtonRequestsIncrement
-{
+- (void)testIncrementButtonRequestsIncrement {
     [self tapButton:self.view.incrementButton];
 
     [verify(self.presenter) increment];
 }
 
 
-- (void)testDecrementButtonRequestsDecrement
-{
+- (void)testDecrementButtonRequestsDecrement {
     [self tapButton:self.view.decrementButton];
 
     [verify(self.presenter) decrement];
@@ -112,14 +105,12 @@
 
 #pragma mark -
 
-- (void)setDecrementButtonEnabled:(BOOL)enabled
-{
+- (void)setDecrementButtonEnabled:(BOOL)enabled {
     self.view.decrementButton.enabled = enabled;
 }
 
 
-- (void)tapButton:(UIButton*)button
-{
+- (void)tapButton:(UIButton *)button {
     [button sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 

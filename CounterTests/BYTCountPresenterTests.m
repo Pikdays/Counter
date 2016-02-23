@@ -16,20 +16,20 @@
 #import <XCTest/XCTest.h>
 
 #define MOCKITO_SHORTHAND
+
 #import "OCMockito.h"
 
 
 @interface BYTCountPresenterTests : XCTestCase
-@property (nonatomic, strong)   BYTCountInteractor *          presenter;
-@property (nonatomic, strong)   id<BYTCountViewProtocol>            view;
-@property (nonatomic, strong)   id<BYTCountInteractorInput> interactor;
+@property(nonatomic, strong) BYTCountInteractor *presenter;
+@property(nonatomic, strong) id <BYTCountViewProtocol> view;
+@property(nonatomic, strong) id <BYTCountInteractorInput> interactor;
 @end
 
 
 @implementation BYTCountPresenterTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
 
     self.presenter = [[BYTCountInteractor alloc] init];
@@ -42,56 +42,49 @@
 }
 
 
-- (void)testUpdateViewRequestsInteractorCount
-{
+- (void)testUpdateViewRequestsInteractorCount {
     [self.presenter updateView];
 
     [verify(self.interactor) requestCount];
 }
 
 
-- (void)testIncrementRequestsInteractorIncrement
-{
-	[self.presenter increment];
+- (void)testIncrementRequestsInteractorIncrement {
+    [self.presenter increment];
 
     [verify(self.interactor) increment];
 }
 
 
-- (void)testDecrementRequestsInteractorDecrement
-{
-	[self.presenter decrement];
+- (void)testDecrementRequestsInteractorDecrement {
+    [self.presenter decrement];
 
     [verify(self.interactor) decrement];
 }
 
 
-- (void)testReceivingZeroDisplaysZero
-{
+- (void)testReceivingZeroDisplaysZero {
     [self.presenter updateCount:0];
 
     [verify(self.view) setCountText:@"zero"];
 }
 
 
-- (void)testReceivingOneDisplaysOne
-{
+- (void)testReceivingOneDisplaysOne {
     [self.presenter updateCount:1];
 
     [verify(self.view) setCountText:@"one"];
 }
 
 
-- (void)testReceivingZeroDisablesDecrement
-{
+- (void)testReceivingZeroDisablesDecrement {
     [self.presenter updateCount:0];
 
     [verify(self.view) setDecrementEnabled:NO];
 }
 
 
-- (void)testReceivingOneEnablesDecrement
-{
+- (void)testReceivingOneEnablesDecrement {
     [self.presenter updateCount:1];
 
     [verify(self.view) setDecrementEnabled:YES];
