@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTClassObjectMock.m
-//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2016 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: David Hart
 //  Source: https://github.com/jonreid/OCMockito

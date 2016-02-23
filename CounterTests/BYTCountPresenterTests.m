@@ -1,8 +1,8 @@
 //
 //  Counter - CACountPresenterTests.m
-//  Copyright 2013 Mutual Mobile. All rights reserved.
+//  Copyright 2016 Mutual Mobile. All rights reserved.
 //
-//  Created by: Jeff Gilbert
+//  Created by: Pikdays
 //
 
 #import <XCTest/XCTest.h>

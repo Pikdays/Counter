@@ -2,8 +2,8 @@
 //  CACountPresenter.m
 //  Counter
 //
-//  Created by Jeff Gilbert on 8/23/13.
-//  Copyright (c) 2013 Mutual Mobile. All rights reserved.
+//  Created by Pikdays on 8/23/13.
+//  Copyright (c) 2016 Mutual Mobile. All rights reserved.
 //
 
 #import "BYTCountInteractor.h"

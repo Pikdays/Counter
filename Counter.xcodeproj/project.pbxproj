@@ -46,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		0BD246DD10D317045C9F7D00 /* libPods-Counter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Counter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C02C60B3ADF80AFC03A6C7 /* Pods-Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.debug.xcconfig"; sourceTree = "<group>"; };
+		372E975EB451DB9286F60A72 /* Pods-Counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.release.xcconfig"; sourceTree = "<group>"; };
 		5C3490304A9F8606C745CD47 /* BYTCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountViewController.m; sourceTree = "<group>"; };
 		5C3490BF9A7F3FC9D6461A95 /* NSNumberFormatter+BYT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+BYT.h"; sourceTree = "<group>"; };
 		5C349141E1558164074247FE /* BYTCountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BYTCountViewController.xib; sourceTree = "<group>"; };
@@ -86,8 +88,6 @@
 		CFBFC3C017C6A41D00004DE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CFBFC3E717C6A63500004DE1 /* BYTCountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountInteractorTests.m; path = ../CounterTests/BYTCountInteractorTests.m; sourceTree = "<group>"; };
-		D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.debug.xcconfig"; sourceTree = "<group>"; };
-		F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Counter/Pods-Counter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,8 +334,8 @@
 		F61306E17672DFF5BD4032F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */,
-				F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */,
+				13C02C60B3ADF80AFC03A6C7 /* Pods-Counter.debug.xcconfig */,
+				372E975EB451DB9286F60A72 /* Pods-Counter.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -544,7 +544,6 @@
 /* Begin XCBuildConfiguration section */
 		CF6FA890197AD41300B2B172 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Counter.app/Counter";
 				CLANG_ENABLE_MODULES = YES;
@@ -578,7 +577,6 @@
 		};
 		CF6FA891197AD41300B2B172 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Counter.app/Counter";
 				CLANG_ENABLE_MODULES = YES;
@@ -609,7 +607,6 @@
 		};
 		CFBFC3DF17C6A41D00004DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -642,7 +639,6 @@
 		};
 		CFBFC3E017C6A41D00004DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -668,7 +664,7 @@
 		};
 		CFBFC3E217C6A41D00004DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5695654C3771E30F5419EC0 /* Pods-Counter.debug.xcconfig */;
+			baseConfigurationReference = 13C02C60B3ADF80AFC03A6C7 /* Pods-Counter.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
@@ -681,7 +677,7 @@
 		};
 		CFBFC3E317C6A41D00004DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F66150B7F5BB7E0F022439DB /* Pods-Counter.release.xcconfig */;
+			baseConfigurationReference = 372E975EB451DB9286F60A72 /* Pods-Counter.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
