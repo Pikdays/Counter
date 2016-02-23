@@ -13,13 +13,13 @@
 
 @implementation CNTCountPresenter
 
-#pragma mark - Set_Get
+#pragma mark - ⊂((・猿・))⊃ Set_Get
 
 - (BOOL)canDecrementCount:(NSUInteger)count {
     return (count > 0);
 }
 
-#pragma mark - Action
+#pragma mark - ⊂((・猿・))⊃ Action
 
 - (void)increment {
     [self.input increment];
@@ -33,6 +33,7 @@
     [self.input requestCount];
 }
 
+#pragma mark - ⊂((・猿・))⊃ Delegate
 #pragma mark - CNTCountInteractorOutputProtocol
 
 - (void)outputCount:(NSUInteger)count {

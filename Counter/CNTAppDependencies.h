@@ -5,6 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class RootWireframe;
+
 
 @interface CNTAppDependencies : NSObject
 

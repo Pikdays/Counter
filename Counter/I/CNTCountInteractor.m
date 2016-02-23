@@ -17,12 +17,13 @@
 
 @implementation CNTCountInteractor
 
-#pragma mark - Set_Get
+#pragma mark - ⊂((・猿・))⊃ Set_Get
 
 - (BOOL)canDecrement {
     return (self.count > 0);
 }
 
+#pragma mark - ⊂((・猿・))⊃ Delegate
 #pragma mark - CNTCountInteractorInputProtocol
 
 - (void)increment {

@@ -11,6 +11,7 @@
 
 @interface CNTAppDependencies ()
 
+@property(nonatomic, strong) RootWireframe *rootWireframe;
 @property(nonatomic, strong) CNTCountWireframe *countWireframe;
 
 @end
@@ -27,8 +28,7 @@
 
 - (void)configureDependencies {
     // Root Level Classes
-    RootWireframe *rootWireframe = [[RootWireframe alloc] init];
-
+    self.rootWireframe = [[RootWireframe alloc] init];
 
     // Count Modules Classes
     CNTCountWireframe *countWireframe = [[CNTCountWireframe alloc] init];
@@ -41,7 +41,7 @@
 
     /********** R = P + R **********/
     countWireframe.countPresenter = countPresenter;
-    countWireframe.rootWireframe = rootWireframe;
+    countWireframe.rootWireframe = self.rootWireframe;
     self.countWireframe = countWireframe;
 }
 

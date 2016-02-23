@@ -23,8 +23,6 @@
     self.countPresenter.view = self.countViewController;
 
     /********** Root **********/
-    // present controller
-    // *** present self with RootViewController
     [self.rootWireframe showRootViewController:self.countViewController inWindow:window];
 }
 
