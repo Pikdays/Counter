@@ -18,6 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     CNTAppDependencies *dependencies = [[CNTAppDependencies alloc] init];
+    // 加载 RootVC 到 Window 中
     [dependencies installRootViewControllerIntoWindow:self.window];
 
     [self.window makeKeyAndVisible];

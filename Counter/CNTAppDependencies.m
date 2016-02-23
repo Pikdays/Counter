@@ -35,15 +35,13 @@
     CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
     CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
 
-    /********** I **********/
+    /********** I & P **********/
     countInteractor.output = countPresenter;
-
-    /********** P **********/
     countPresenter.input = countInteractor;
 
-    /********** R **********/
-    countWireframe.rootWireframe = rootWireframe;
+    /********** R = P + R **********/
     countWireframe.countPresenter = countPresenter;
+    countWireframe.rootWireframe = rootWireframe;
     self.countWireframe = countWireframe;
 }
 

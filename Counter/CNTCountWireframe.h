@@ -16,5 +16,4 @@
 
 - (void)presentCountInterfaceFromWindow:(UIWindow *)window;
 
-
 @end

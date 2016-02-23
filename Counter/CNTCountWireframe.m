@@ -17,11 +17,9 @@
 @implementation CNTCountWireframe
 
 - (void)presentCountInterfaceFromWindow:(UIWindow *)window {
-    /********** V **********/
+    /********** V & P **********/
     self.countViewController = [CNTCountViewController instantiateViewControllerFromNib];
     self.countViewController.countPresenter = self.countPresenter;
-
-    /********** P **********/
     self.countPresenter.view = self.countViewController;
 
     /********** Root **********/

@@ -18,11 +18,12 @@
 @implementation RootWireframe
 
 - (void)showRootViewController:(UIViewController *)viewController inWindow:(UIWindow *)window {
-    UINavigationController *navigationController = (UINavigationController *) [window rootViewController];
-    navigationController.viewControllers = @[viewController];
+    window.rootViewController = viewController;
 }
 
-//- (instancetype)initWithWindow:(UIWindow *)window {
+@end
+
+/*//- (instancetype)initWithWindow:(UIWindow *)window {
 //    if ((self = [super init])) {
 //        [self configureDependencies:window];
 //    }
@@ -35,18 +36,16 @@
 //    CNTCountPresenter *countPresenter = [[CNTCountPresenter alloc] init];
 //    CNTCountInteractor *countInteractor = [[CNTCountInteractor alloc] init];
 //
-//    /********** Root **********/
+//    *//********** Root **********//*
 //    window.rootViewController = countViewController;
 //
-//    /********** V **********/
+//    *//********** V **********//*
 //    countViewController.countPresenter = countPresenter;
 //
-//    /********** P **********/
+//    *//********** P **********//*
 //    countPresenter.view = countViewController;
 //    countPresenter.input = countInteractor;
 //
-//    /********** I **********/
+//    *//********** I **********//*
 //    countInteractor.output = countPresenter;
-//}
-
-@end
+//}*/
