@@ -5,14 +5,10 @@
 //  Created by: Jeff Gilbert
 //
 
-// Class under test
-#import "BYTCountViewController.h"
-
-// Collaborators
-#import "BYTCountInteractor.h"
-
-// Test support
 #import <XCTest/XCTest.h>
+
+#import "BYTCountViewController.h"
+#import "BYTCountPresenter.h"
 
 #define HC_SHORTHAND
 
@@ -29,7 +25,7 @@
 
 @interface BYTCountViewControllerTests : XCTestCase
 @property(nonatomic, strong) BYTCountViewController *view;
-@property(nonatomic, strong) BYTCountInteractor *presenter;
+@property(nonatomic, strong) BYTCountPresenter *presenter;
 @end
 
 
@@ -39,10 +35,9 @@
     [super setUp];
 
     self.view = [[BYTCountViewController alloc] init];
-    [self.view view];   // force the output to load
 
-    self.presenter = mock([BYTCountInteractor class]);
-    self.view.viewModel = self.presenter;
+    self.presenter = mock([BYTCountPresenter class]);
+    self.view.presenter = self.presenter;
 }
 
 

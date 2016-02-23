@@ -5,11 +5,10 @@
 //  Created by: Jeff Gilbert
 //
 
-// Class under test
+#import <XCTest/XCTest.h>
+
 #import "BYTCountInteractor.h"
 
-// Test support
-#import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
 
@@ -20,10 +19,9 @@
 
 
 @interface BYTCountInteractorTests : XCTestCase <BYTCountInteractorOutputDelegate>
-@property(nonatomic, strong) id <BYTCountInteractorInputProtocol> interactor;
+@property(nonatomic, strong) id <BYTCountInteractorInputProtocol> input;
 @property(nonatomic, assign) NSUInteger count;
 @end
-
 
 @implementation BYTCountInteractorTests
 
@@ -32,63 +30,63 @@
 
     BYTCountInteractor *interactor = [[BYTCountInteractor alloc] init];
     interactor.output = self;
-    self.interactor = interactor;
+    self.input = interactor;
 }
 
 
 - (void)testInitialCountIsZero {
     self.count = 1;
 
-    [self.interactor requestCount];
+    [self.input requestCount];
 
     assertCountEquals(0);
 }
 
 
 - (void)testOneIncrementReturnsOne {
-    [self.interactor increment];
+    [self.input increment];
 
     assertCountEquals(1);
 }
 
 
 - (void)testTwoIncrementsReturnsTwo {
-    [self.interactor increment];
-    [self.interactor increment];
+    [self.input increment];
+    [self.input increment];
 
     assertCountEquals(2);
 }
 
 
 - (void)testDecrementFromZeroReturnsZero {
-    [self.interactor decrement];
+    [self.input decrement];
 
     assertCountEquals(0);
 }
 
 
 - (void)testOneDecrementFromOneReturnsZero {
-    [self.interactor increment];
+    [self.input increment];
 
-    [self.interactor decrement];
+    [self.input decrement];
 
     assertCountEquals(0);
 }
 
 
 - (void)testOneDecrementFromTwoReturnsOne {
-    [self.interactor increment];
-    [self.interactor increment];
+    [self.input increment];
+    [self.input increment];
 
-    [self.interactor decrement];
+    [self.input decrement];
 
     assertCountEquals(1);
 }
 
+#pragma mark - ⊂((・猿・))⊃ Delegate
+#pragma mark - BYTCountInteractorOutputDelegate
 
-#pragma mark - Interactor Output
-
-- (void)updateCount:(NSUInteger)count {
+- (void)outputCount:(NSUInteger)count {
     self.count = count;
 }
 

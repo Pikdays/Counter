@@ -5,15 +5,10 @@
 //  Created by: Jeff Gilbert
 //
 
-// Class under test
-#import "BYTCountInteractor.h"
-
-// Collaborators
-#import "BYTCountViewProtocol.h"
-#import "BYTCountInteractorIO.h"
-
-// Test support
 #import <XCTest/XCTest.h>
+
+#import "BYTCountPresenter.h"
+#import "BYTCountViewProtocol.h"
 
 #define MOCKITO_SHORTHAND
 
@@ -21,9 +16,9 @@
 
 
 @interface BYTCountPresenterTests : XCTestCase
-@property(nonatomic, strong) BYTCountInteractor *presenter;
+@property(nonatomic, strong) BYTCountPresenter *presenter;
 @property(nonatomic, strong) id <BYTCountViewProtocol> view;
-@property(nonatomic, strong) id <BYTCountInteractorInput> interactor;
+@property(nonatomic, strong) id <BYTCountInteractorInputProtocol> input;
 @end
 
 
@@ -32,60 +27,60 @@
 - (void)setUp {
     [super setUp];
 
-    self.presenter = [[BYTCountInteractor alloc] init];
+    self.presenter = [[BYTCountPresenter alloc] init];
 
     self.view = mockProtocol(@protocol(BYTCountViewProtocol));
-    self.presenter.output = self.view;
+    self.presenter.view = self.view;
 
-    self.interactor = mockProtocol(@protocol(CNTCountInteractorInput));
-    self.presenter.interactor = self.interactor;
+    self.input = mockProtocol(@protocol(BYTCountInteractorInputProtocol));
+    self.presenter.input = self.input;
 }
 
 
 - (void)testUpdateViewRequestsInteractorCount {
     [self.presenter updateView];
 
-    [verify(self.interactor) requestCount];
+    [verify(self.input) requestCount];
 }
 
 
 - (void)testIncrementRequestsInteractorIncrement {
     [self.presenter increment];
 
-    [verify(self.interactor) increment];
+    [verify(self.input) increment];
 }
 
 
 - (void)testDecrementRequestsInteractorDecrement {
     [self.presenter decrement];
 
-    [verify(self.interactor) decrement];
+    [verify(self.input) decrement];
 }
 
 
 - (void)testReceivingZeroDisplaysZero {
-    [self.presenter updateCount:0];
+    [self.presenter outputCount:0];
 
     [verify(self.view) setCountText:@"zero"];
 }
 
 
 - (void)testReceivingOneDisplaysOne {
-    [self.presenter updateCount:1];
+    [self.presenter outputCount:1];
 
     [verify(self.view) setCountText:@"one"];
 }
 
 
 - (void)testReceivingZeroDisablesDecrement {
-    [self.presenter updateCount:0];
+    [self.presenter outputCount:0];
 
     [verify(self.view) setDecrementEnabled:NO];
 }
 
 
 - (void)testReceivingOneEnablesDecrement {
-    [self.presenter updateCount:1];
+    [self.presenter outputCount:1];
 
     [verify(self.view) setDecrementEnabled:YES];
 }

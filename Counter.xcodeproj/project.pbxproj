@@ -275,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				CFBFC3B217C6A41D00004DE1 /* Counter */,
-				CFBFC3D617C6A41D00004DE1 /* CounterTests */,
 				CF6FA884197AD41300B2B172 /* Counter Tests */,
 				CFBFC3AB17C6A41D00004DE1 /* Frameworks */,
 				CFBFC3AA17C6A41D00004DE1 /* Products */,
@@ -330,13 +329,6 @@
 				CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CFBFC3D617C6A41D00004DE1 /* CounterTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CounterTests;
 			sourceTree = "<group>";
 		};
 		F61306E17672DFF5BD4032F8 /* Pods */ = {

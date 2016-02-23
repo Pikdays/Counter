@@ -9,12 +9,6 @@
 #import "BYTCountViewController.h"
 #import "BYTCountPresenterProtocol.h"
 
-@interface BYTCountViewController ()
-@property(nonatomic, weak) IBOutlet UILabel *countLabel;
-@property(nonatomic, weak) IBOutlet UIButton *incrementButton;
-@property(nonatomic, weak) IBOutlet UIButton *decrementButton;
-@end
-
 @implementation BYTCountViewController
 
 #pragma mark - ⊂((・猿・))⊃ LifeCycle

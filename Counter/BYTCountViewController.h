@@ -16,6 +16,10 @@
 
 @interface BYTCountViewController : UIViewController <BYTCountViewProtocol>
 
+@property(nonatomic, weak) IBOutlet UILabel *countLabel;
+@property(nonatomic, weak) IBOutlet UIButton *incrementButton;
+@property(nonatomic, weak) IBOutlet UIButton *decrementButton;
+
 @property(nonatomic, strong) id <BYTCountPresenterProtocol> presenter;
 
 + (instancetype)instantiateViewControllerFromNib;
