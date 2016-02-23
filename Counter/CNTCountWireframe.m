@@ -4,7 +4,9 @@
 //
 
 #import "CNTCountWireframe.h"
+
 #import "RootWireframe.h"
+
 #import "CNTCountViewController.h"
 #import "CNTCountPresenter.h"
 
@@ -19,7 +21,7 @@
 - (void)presentCountInterfaceFromWindow:(UIWindow *)window {
     /********** V & P **********/
     self.countViewController = [CNTCountViewController instantiateViewControllerFromNib];
-    self.countViewController.countPresenter = self.countPresenter;
+    self.countViewController.presenter = self.countPresenter;
     self.countPresenter.view = self.countViewController;
 
     /********** Root **********/

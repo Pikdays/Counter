@@ -5,19 +5,14 @@
 
 #import <Foundation/Foundation.h>
 #import "CNTCountInteractorIO.h"
+#import "CNTCountPresenterProtocol.h"
 
 @protocol CNTCountViewProtocol;
 
 
-@interface CNTCountPresenter : NSObject <CNTCountInteractorOutputDelegate>
+@interface CNTCountPresenter : NSObject <CNTCountPresenterProtocol, CNTCountInteractorOutputDelegate>
 
 @property(nonatomic, weak) id <CNTCountViewProtocol> view;
 @property(nonatomic, strong) id <CNTCountInteractorInputProtocol> input;
-
-- (void)increment;
-
-- (void)decrement;
-
-- (void)updateView;
 
 @end

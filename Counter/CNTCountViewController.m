@@ -7,9 +7,7 @@
 //
 
 #import "CNTCountViewController.h"
-#import "CNTCountInteractor.h"
-#import "CNTCountPresenter.h"
-
+#import "CNTCountPresenterProtocol.h"
 
 @interface CNTCountViewController ()
 @property(nonatomic, weak) IBOutlet UILabel *countLabel;
@@ -34,17 +32,17 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    [self.countPresenter updateView];
+    [self.presenter updateView];
 }
 
 #pragma mark - ⊂((・猿・))⊃ Actions
 
 - (IBAction)increment:(id)sender {
-    [self.countPresenter increment];
+    [self.presenter increment];
 }
 
 - (IBAction)decrement:(id)sender {
-    [self.countPresenter decrement];
+    [self.presenter decrement];
 }
 
 #pragma mark - ⊂((・猿・))⊃ Delegate

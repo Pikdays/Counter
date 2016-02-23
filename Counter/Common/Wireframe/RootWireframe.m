@@ -7,9 +7,6 @@
 //
 
 #import "RootWireframe.h"
-#import "CNTCountInteractor.h"
-#import "CNTCountViewController.h"
-#import "CNTCountPresenter.h"
 
 @implementation RootWireframe
 

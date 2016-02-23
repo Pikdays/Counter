@@ -11,7 +11,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "CNTCountViewProtocol.h"
 #import "CNTCountInteractorIO.h"
 
 @interface CNTCountInteractor : NSObject <CNTCountInteractorInputProtocol>

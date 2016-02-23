@@ -7,8 +7,6 @@
 //
 
 #import "CNTAppDelegate.h"
-#import "CNTCountInteractor.h"
-#import "CNTCountViewController.h"
 #import "CNTAppDependencies.h"
 
 

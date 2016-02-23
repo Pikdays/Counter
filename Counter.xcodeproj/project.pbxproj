@@ -57,6 +57,7 @@
 		5C3496CB8EBC2D7B0A7564FA /* CNTAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTAppDependencies.h; sourceTree = "<group>"; };
 		5C3497A7CF374AFE06A290F3 /* CNTCountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenter.h; sourceTree = "<group>"; };
 		5C34998CCC4CE713BBEB7A86 /* CNTCountInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractorIO.h; sourceTree = "<group>"; };
+		5C349A360D485038350A0156 /* CNTCountPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenterProtocol.h; sourceTree = "<group>"; };
 		5C349AA32AA1A5C7759EF2BD /* CNTCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountViewController.h; sourceTree = "<group>"; };
 		5C349BF77DB66C428536D8BC /* CNTCountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountWireframe.m; sourceTree = "<group>"; };
 		5C349DCC5CF3925516A70026 /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
@@ -167,6 +168,14 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		5C3496EA40827068A73C0AA2 /* P_Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5C349A360D485038350A0156 /* CNTCountPresenterProtocol.h */,
+			);
+			name = P_Protocol;
+			sourceTree = "<group>";
+		};
 		5C34971865B90E237ACE2AFA /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +198,7 @@
 			children = (
 				5C349EF1D8F5676FD75ECEAD /* CNTCountPresenter.m */,
 				5C3497A7CF374AFE06A290F3 /* CNTCountPresenter.h */,
+				5C3496EA40827068A73C0AA2 /* P_Protocol */,
 			);
 			path = P;
 			sourceTree = "<group>";

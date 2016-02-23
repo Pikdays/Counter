@@ -11,13 +11,12 @@
 #import <UIKit/UIKit.h>
 #import "CNTCountViewProtocol.h"
 
-@class CNTCountInteractor;
-@class CNTCountPresenter;
+@protocol CNTCountPresenterProtocol;
 
 
 @interface CNTCountViewController : UIViewController <CNTCountViewProtocol>
 
-@property(nonatomic, strong) CNTCountPresenter *countPresenter;
+@property(nonatomic, strong) id <CNTCountPresenterProtocol> presenter;
 
 + (instancetype)instantiateViewControllerFromNib;
 
