@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3491647CEB9E752BCE9315 /* Counter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5C349B5DCB1E5BE9988D26DC /* Counter.pdf */; };
 		5C3493C57CBC917EF4C84C5D /* BYTCountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3493D4FE514DC583B3B2E9 /* BYTCountInteractor.m */; };
 		5C3493D6011519C8C7BF6A87 /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349DCC5CF3925516A70026 /* RootWireframe.m */; };
 		5C3493FCD32F6846EE432E04 /* BYTCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C349141E1558164074247FE /* BYTCountViewController.xib */; };
 		5C3495BF52F67A324B9ACAA1 /* BYTCountWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349BF77DB66C428536D8BC /* BYTCountWireframe.m */; };
 		5C349777761D8BEC7C4D3DB7 /* BYTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3490304A9F8606C745CD47 /* BYTCountViewController.m */; };
 		5C3499B344893C50F8BD0801 /* BYTAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3492E240F31AC2F3D0766C /* BYTAppDependencies.m */; };
+		5C349A9ECB59E0CE3953E9FC /* Counter.dot in Resources */ = {isa = PBXBuildFile; fileRef = 5C349EBE5FB00AA73B1F582E /* Counter.dot */; };
 		5C349AE52A903BC4D54A69D3 /* BYTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349EF1D8F5676FD75ECEAD /* BYTCountPresenter.m */; };
 		5C349B794BD7053D96D3E113 /* NSNumberFormatter+BYT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349E88B6CECEE22D562281 /* NSNumberFormatter+BYT.m */; };
 		9BD44D45B2755C065B4FC25B /* libPods-Counter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD246DD10D317045C9F7D00 /* libPods-Counter.a */; };
@@ -61,10 +63,12 @@
 		5C34998CCC4CE713BBEB7A86 /* BYTCountInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountInteractorIO.h; sourceTree = "<group>"; };
 		5C349A360D485038350A0156 /* BYTCountPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountPresenterProtocol.h; sourceTree = "<group>"; };
 		5C349AA32AA1A5C7759EF2BD /* BYTCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountViewController.h; sourceTree = "<group>"; };
+		5C349B5DCB1E5BE9988D26DC /* Counter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Counter.pdf; sourceTree = SOURCE_ROOT; };
 		5C349BF77DB66C428536D8BC /* BYTCountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountWireframe.m; sourceTree = "<group>"; };
 		5C349DCC5CF3925516A70026 /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
 		5C349DF19B60D290C73A682E /* BYTCountViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountViewProtocol.h; sourceTree = "<group>"; };
 		5C349E88B6CECEE22D562281 /* NSNumberFormatter+BYT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+BYT.m"; sourceTree = "<group>"; };
+		5C349EBE5FB00AA73B1F582E /* Counter.dot */ = {isa = PBXFileReference; lastKnownFileType = file.dot; path = Counter.dot; sourceTree = SOURCE_ROOT; };
 		5C349EF1D8F5676FD75ECEAD /* BYTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountPresenter.m; sourceTree = "<group>"; };
 		5C349FEEABC0F7FE45BC0493 /* PJCategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJCategoriesHeader.h; sourceTree = "<group>"; };
 		CF0DB9A817C7D9B20062B5F6 /* BYTCountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountPresenterTests.m; path = ../CounterTests/BYTCountPresenterTests.m; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 				5C3493D4FE514DC583B3B2E9 /* BYTCountInteractor.m */,
 			);
 			path = I;
+			sourceTree = "<group>";
+		};
+		5C3494CAF7A2AA75776B4822 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				5C349EBE5FB00AA73B1F582E /* Counter.dot */,
+				5C349B5DCB1E5BE9988D26DC /* Counter.pdf */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 		5C34963C61C5C9D18B954AB0 /* IO_Protocol */ = {
@@ -327,6 +340,7 @@
 				CFBFC3BE17C6A41D00004DE1 /* Default.png */,
 				CFBFC3C017C6A41D00004DE1 /* Default@2x.png */,
 				CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */,
+				5C3494CAF7A2AA75776B4822 /* Dependencies */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -432,6 +446,8 @@
 				CFBFC3C117C6A41D00004DE1 /* Default@2x.png in Resources */,
 				CFBFC3C317C6A41D00004DE1 /* Default-568h@2x.png in Resources */,
 				5C3493FCD32F6846EE432E04 /* BYTCountViewController.xib in Resources */,
+				5C349A9ECB59E0CE3953E9FC /* Counter.dot in Resources */,
+				5C3491647CEB9E752BCE9315 /* Counter.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
