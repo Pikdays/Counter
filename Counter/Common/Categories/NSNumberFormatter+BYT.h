@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSNumberFormatter (CNT)
+@interface NSNumberFormatter (BYT)
 
 + (NSString *)formattedCount:(NSUInteger)count;
 

@@ -3,10 +3,10 @@
 // Copyright (c) 2016 Mutual Mobile. All rights reserved.
 //
 
-#import "NSNumberFormatter+CNT.h"
+#import "NSNumberFormatter+BYT.h"
 
 
-@implementation NSNumberFormatter (CNT)
+@implementation NSNumberFormatter (BYT)
 
 + (NSNumberFormatter *)countFormatter {
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];

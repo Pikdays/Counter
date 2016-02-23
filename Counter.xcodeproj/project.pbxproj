@@ -14,7 +14,7 @@
 		5C349777761D8BEC7C4D3DB7 /* BYTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3490304A9F8606C745CD47 /* BYTCountViewController.m */; };
 		5C3499B344893C50F8BD0801 /* BYTAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3492E240F31AC2F3D0766C /* BYTAppDependencies.m */; };
 		5C349AE52A903BC4D54A69D3 /* BYTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349EF1D8F5676FD75ECEAD /* BYTCountPresenter.m */; };
-		5C349B794BD7053D96D3E113 /* NSNumberFormatter+CNT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349E88B6CECEE22D562281 /* NSNumberFormatter+CNT.m */; };
+		5C349B794BD7053D96D3E113 /* NSNumberFormatter+BYT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C349E88B6CECEE22D562281 /* NSNumberFormatter+BYT.m */; };
 		9BD44D45B2755C065B4FC25B /* libPods-Counter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD246DD10D317045C9F7D00 /* libPods-Counter.a */; };
 		CF6FA881197AD41300B2B172 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6FA87A197AD02100B2B172 /* XCTest.framework */; };
 		CF6FA882197AD41300B2B172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		0BD246DD10D317045C9F7D00 /* libPods-Counter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Counter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3490304A9F8606C745CD47 /* BYTCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountViewController.m; sourceTree = "<group>"; };
-		5C3490BF9A7F3FC9D6461A95 /* NSNumberFormatter+CNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+CNT.h"; sourceTree = "<group>"; };
+		5C3490BF9A7F3FC9D6461A95 /* NSNumberFormatter+BYT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+BYT.h"; sourceTree = "<group>"; };
 		5C349141E1558164074247FE /* BYTCountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BYTCountViewController.xib; sourceTree = "<group>"; };
 		5C3491D95CBADB5E4EE1069A /* BYTCountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountInteractor.h; sourceTree = "<group>"; };
 		5C3492E240F31AC2F3D0766C /* BYTAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTAppDependencies.m; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		5C349BF77DB66C428536D8BC /* BYTCountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountWireframe.m; sourceTree = "<group>"; };
 		5C349DCC5CF3925516A70026 /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
 		5C349DF19B60D290C73A682E /* BYTCountViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTCountViewProtocol.h; sourceTree = "<group>"; };
-		5C349E88B6CECEE22D562281 /* NSNumberFormatter+CNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+CNT.m"; sourceTree = "<group>"; };
+		5C349E88B6CECEE22D562281 /* NSNumberFormatter+BYT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+BYT.m"; sourceTree = "<group>"; };
 		5C349EF1D8F5676FD75ECEAD /* BYTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountPresenter.m; sourceTree = "<group>"; };
 		5C349FEEABC0F7FE45BC0493 /* PJCategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJCategoriesHeader.h; sourceTree = "<group>"; };
 		CF0DB9A817C7D9B20062B5F6 /* BYTCountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountPresenterTests.m; path = ../CounterTests/BYTCountPresenterTests.m; sourceTree = "<group>"; };
@@ -179,8 +179,8 @@
 		5C34971865B90E237ACE2AFA /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				5C349E88B6CECEE22D562281 /* NSNumberFormatter+CNT.m */,
-				5C3490BF9A7F3FC9D6461A95 /* NSNumberFormatter+CNT.h */,
+				5C349E88B6CECEE22D562281 /* NSNumberFormatter+BYT.m */,
+				5C3490BF9A7F3FC9D6461A95 /* NSNumberFormatter+BYT.h */,
 				5C349FEEABC0F7FE45BC0493 /* PJCategoriesHeader.h */,
 			);
 			path = Categories;
@@ -511,7 +511,7 @@
 				CFBFC3B917C6A41D00004DE1 /* main.m in Sources */,
 				CFBFC3BD17C6A41D00004DE1 /* BYTAppDelegate.m in Sources */,
 				5C3493D6011519C8C7BF6A87 /* RootWireframe.m in Sources */,
-				5C349B794BD7053D96D3E113 /* NSNumberFormatter+CNT.m in Sources */,
+				5C349B794BD7053D96D3E113 /* NSNumberFormatter+BYT.m in Sources */,
 				5C3493C57CBC917EF4C84C5D /* BYTCountInteractor.m in Sources */,
 				5C349AE52A903BC4D54A69D3 /* BYTCountPresenter.m in Sources */,
 				5C349777761D8BEC7C4D3DB7 /* BYTCountViewController.m in Sources */,
