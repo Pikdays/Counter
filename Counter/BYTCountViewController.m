@@ -23,12 +23,6 @@
     self.countLabel.text = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    [self.presenter updateView];
-}
-
 #pragma mark - ⊂((・猿・))⊃ Actions
 
 - (IBAction)increment:(id)sender {

@@ -12,8 +12,6 @@
 
 - (void)decrement;
 
-- (void)requestCount;
-
 @end
 
 

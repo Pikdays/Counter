@@ -39,10 +39,6 @@
     }
 }
 
-- (void)requestCount {
-    [self outputCount];
-}
-
 #pragma mark - CNTCountInteractorOutputProtocol
 
 - (void)outputCount {

@@ -11,6 +11,4 @@
 
 - (void)decrement;
 
-- (void)updateView;
-
 @end

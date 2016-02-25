@@ -29,11 +29,7 @@
     [self.input decrement];
 }
 
-- (void)updateView {
-    [self.input requestCount];
-}
-
-#pragma mark - ⊂((・猿・))⊃ Delegate
+#pragma mark - ⊂((・猿・))⊃ Delegate2
 #pragma mark - CNTCountInteractorOutputProtocol
 
 - (void)outputCount:(NSUInteger)count {

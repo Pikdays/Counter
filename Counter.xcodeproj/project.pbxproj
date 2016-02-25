@@ -22,9 +22,6 @@
 		CF6FA882197AD41300B2B172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CF6FA883197AD41300B2B172 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CF6FA889197AD41300B2B172 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF6FA887197AD41300B2B172 /* InfoPlist.strings */; };
-		CF6FA892197AD44600B2B172 /* BYTCountInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3E717C6A63500004DE1 /* BYTCountInteractorTests.m */; };
-		CF6FA893197AD44600B2B172 /* BYTCountPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9A817C7D9B20062B5F6 /* BYTCountPresenterTests.m */; };
-		CF6FA894197AD44600B2B172 /* BYTCountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AE17C837390062B5F6 /* BYTCountViewControllerTests.m */; };
 		CFBFC3AD17C6A41D00004DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CFBFC3AF17C6A41D00004DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CFBFC3B117C6A41D00004DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3B017C6A41D00004DE1 /* CoreGraphics.framework */; };
@@ -71,8 +68,6 @@
 		5C349EBE5FB00AA73B1F582E /* Counter.dot */ = {isa = PBXFileReference; lastKnownFileType = file.dot; path = Counter.dot; sourceTree = SOURCE_ROOT; };
 		5C349EF1D8F5676FD75ECEAD /* BYTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTCountPresenter.m; sourceTree = "<group>"; };
 		5C349FEEABC0F7FE45BC0493 /* PJCategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJCategoriesHeader.h; sourceTree = "<group>"; };
-		CF0DB9A817C7D9B20062B5F6 /* BYTCountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountPresenterTests.m; path = ../CounterTests/BYTCountPresenterTests.m; sourceTree = "<group>"; };
-		CF0DB9AE17C837390062B5F6 /* BYTCountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountViewControllerTests.m; path = ../CounterTests/BYTCountViewControllerTests.m; sourceTree = "<group>"; };
 		CF6FA87A197AD02100B2B172 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CF6FA880197AD41300B2B172 /* Counter Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Counter Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6FA886197AD41300B2B172 /* Counter Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Counter Tests-Info.plist"; sourceTree = "<group>"; };
@@ -91,7 +86,6 @@
 		CFBFC3BE17C6A41D00004DE1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CFBFC3C017C6A41D00004DE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CFBFC3E717C6A63500004DE1 /* BYTCountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BYTCountInteractorTests.m; path = ../CounterTests/BYTCountInteractorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,9 +260,6 @@
 		CF6FA884197AD41300B2B172 /* Counter Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3E717C6A63500004DE1 /* BYTCountInteractorTests.m */,
-				CF0DB9A817C7D9B20062B5F6 /* BYTCountPresenterTests.m */,
-				CF0DB9AE17C837390062B5F6 /* BYTCountViewControllerTests.m */,
 				CF6FA885197AD41300B2B172 /* Supporting Files */,
 			);
 			path = "Counter Tests";
@@ -506,9 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6FA893197AD44600B2B172 /* BYTCountPresenterTests.m in Sources */,
-				CF6FA894197AD44600B2B172 /* BYTCountViewControllerTests.m in Sources */,
-				CF6FA892197AD44600B2B172 /* BYTCountInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
